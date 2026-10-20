@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Gonzalez Painting | Spanaway &amp; Tacoma Painters | BBB A+</title>
+<meta name="description" content="Family-owned interior & exterior painting for homes, churches and businesses across Pierce County. BBB A+ accredited, lead-safe certified. Call 253-376-6414.">
+<meta property="og:title" content="Gonzalez Painting | Family-owned painters, Spanaway WA">
+<meta property="og:description" content="Interior & exterior painting, residential & commercial. BBB A+. Call 253-376-6414.">
+<meta property="og:image" content="img/hero.jpg">
+<meta name="theme-color" content="#0D1210">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0D1210;--bg2:#121916;--panel:#17201C;--line:rgba(236,228,214,.1);--tx:#F1EBE0;--mute:#A3A99F;--cu:#D69157;--cu2:#F0B47E;--ink:#0D1210}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font:16px/1.7 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+.serif{font-family:Fraunces,Georgia,serif;font-weight:400;letter-spacing:-.02em;line-height:1.02}
+.serif em{font-style:italic;color:var(--cu)}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--cu)}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:99px;font-weight:700;font-size:15px;transition:transform .3s,box-shadow .3s,background .3s,color .3s;cursor:pointer;border:0;overflow:hidden;isolation:isolate}
+.btn svg{width:17px;height:17px;transition:transform .3s}
+.btn:hover svg{transform:translateX(4px)}
+.btn-c{background:var(--cu);color:var(--ink);box-shadow:0 14px 34px -12px rgba(214,145,87,.7)}
+.btn-c::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--cu2);transform:scaleX(0);transform-origin:right;transition:transform .45s cubic-bezier(.6,0,.2,1)}
+.btn-c:hover::before{transform:scaleX(1);transform-origin:left}
+.btn-c:hover{transform:translateY(-2px)}
+.btn-o{border:1px solid rgba(241,235,224,.25);color:var(--tx);background:rgba(241,235,224,.03);backdrop-filter:blur(8px)}
+.btn-o:hover{border-color:var(--cu);color:var(--cu)}
+
+/* loader */
+#ld{position:fixed;inset:0;z-index:100;background:var(--bg);display:grid;place-items:center;transition:clip-path 1s cubic-bezier(.8,0,.2,1) .2s;clip-path:inset(0 0 0 0)}
+#ld.out{clip-path:inset(0 0 100% 0)}
+#ld{animation:ldo .5s 2.2s forwards}@keyframes ldo{to{opacity:0;visibility:hidden}}
+#ld .w{font:400 italic 46px Fraunces;color:var(--tx);overflow:hidden}
+#ld .w span{display:inline-block;animation:up .9s cubic-bezier(.2,.8,.2,1) both}
+#ld .w b{font-style:normal;font-weight:600;color:var(--cu)}
+@keyframes up{from{transform:translateY(110%)}}
+
+/* cursor glow (desktop) */
+#glow{position:fixed;width:420px;height:420px;border-radius:50%;pointer-events:none;z-index:1;background:radial-gradient(circle,rgba(214,145,87,.09),transparent 65%);transform:translate(-50%,-50%);transition:opacity .4s;opacity:0}
+
+/* header */
+header{position:fixed;inset:0 0 auto;z-index:40;transition:background .4s,border-color .4s;border-bottom:1px solid transparent}
+header.s{background:rgba(13,18,16,.8);backdrop-filter:blur(16px);border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:82px}
+.logo{display:flex;align-items:center;gap:13px}
+.logo .m{width:44px;height:44px;border-radius:50%;border:1px solid var(--cu);display:grid;place-items:center;font:600 italic 20px Fraunces;color:var(--cu)}
+.logo b{display:block;font:600 21px/1 Fraunces;letter-spacing:-.01em}
+.logo small{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--mute)}
+.menu{display:flex;gap:34px;font-size:14px;font-weight:600;color:#CFCAC0}
+.menu a{position:relative}
+.menu a::after{content:"";position:absolute;left:50%;bottom:-6px;width:5px;height:5px;border-radius:50%;background:var(--cu);transform:translateX(-50%) scale(0);transition:transform .3s}
+.menu a:hover{color:#fff}.menu a:hover::after{transform:translateX(-50%) scale(1)}
+.nav .btn{padding:12px 22px}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;align-items:end;overflow:hidden;isolation:isolate}
+.hero .bg{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.hero .bg img{width:100%;height:115%;object-fit:cover;transform:scale(1.12);transition:transform 2.6s cubic-bezier(.2,.8,.2,1);will-change:transform}
+.on .hero .bg img{transform:scale(1)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(13,18,16,.55) 0%,rgba(13,18,16,.2) 35%,rgba(13,18,16,.85) 78%,var(--bg) 100%),linear-gradient(90deg,rgba(13,18,16,.75),transparent 60%)}
+.hero .wrap{width:100%;padding-bottom:90px;padding-top:140px}
+.hero h1{font-size:clamp(54px,9.2vw,138px);max-width:1100px;margin:22px 0 28px}
+.hero h1 .l{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .l>span{display:inline-block;transform:translateY(105%) rotate(2deg);transform-origin:left;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.on .hero h1 .l>span{transform:none}
+.on .hero h1 .l:nth-child(2)>span{transition-delay:.12s}
+.hero-row{display:flex;justify-content:space-between;align-items:end;gap:40px;flex-wrap:wrap}
+.hero p{font-size:clamp(17px,1.5vw,19px);color:#D3CDC1;max-width:520px;margin-bottom:30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.f{opacity:0;transform:translateY(20px);transition:opacity 1s,transform 1s}
+.on .f{opacity:1;transform:none}
+.on .f1{transition-delay:.5s}.on .f2{transition-delay:.65s}.on .f3{transition-delay:.8s}
+.badges{display:flex;gap:10px;flex-wrap:wrap}
+.bdg{display:flex;align-items:center;gap:12px;padding:12px 18px;border-radius:14px;border:1px solid var(--line);background:rgba(13,18,16,.55);backdrop-filter:blur(12px)}
+.bdg .k{font:600 30px/1 Fraunces;color:var(--cu)}
+.bdg small{display:block;font-size:11.5px;color:var(--mute);line-height:1.3;letter-spacing:.04em}
+.bdg b{font-size:14px}
+.cue{position:absolute;right:24px;bottom:40px;writing-mode:vertical-rl;font-size:10px;letter-spacing:.35em;color:var(--mute);display:flex;align-items:center;gap:14px}
+.cue::after{content:"";width:1px;height:60px;background:linear-gradient(var(--cu),transparent);animation:cue 2s infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ticker */
+.tick{border-block:1px solid var(--line);overflow:hidden;background:var(--bg2)}
+.tick .t{display:flex;width:max-content;animation:tk 34s linear infinite}
+.tick span{display:flex;align-items:center;gap:40px;padding:20px 20px;font:400 italic 26px Fraunces;color:#79807A;white-space:nowrap}
+.tick span::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--cu);margin-left:20px}
+@keyframes tk{to{transform:translateX(-50%)}}
+
+section{padding:130px 0;position:relative}
+.hd{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:60px}
+.hd h2{font-size:clamp(42px,5.6vw,80px);margin-top:16px;max-width:760px}
+.hd p{color:var(--mute);max-width:400px;font-size:17px}
+.r{opacity:0;transform:translateY(46px);transition:opacity 1.1s cubic-bezier(.2,.8,.2,1),transform 1.1s cubic-bezier(.2,.8,.2,1)}
+.r.in{opacity:1;transform:none}
+.split .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em}
+.split .w>span{display:inline-block;transform:translateY(100%);transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+.split.in .w>span{transform:none}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--panel)}
+.stat{padding:38px 30px;border-right:1px solid var(--line);position:relative}
+.stat:last-child{border:0}
+.stat .n{font:400 clamp(48px,5vw,70px)/1 Fraunces;letter-spacing:-.03em}
+.stat .n i{font-style:italic;color:var(--cu)}
+.stat p{color:var(--mute);font-size:14px;margin-top:10px}
+
+/* story */
+.story{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:center}
+.stack{position:relative;aspect-ratio:1/1.05}
+.stack figure{position:absolute;border-radius:18px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(0,0,0,.8)}
+.stack .a{inset:0 22% 18% 0}
+.stack .b{inset:42% 0 0 34%;border:6px solid var(--bg)}
+.stack img{width:100%;height:100%;object-fit:cover;transform:scale(1.15);transition:transform 1.6s cubic-bezier(.2,.8,.2,1)}
+.stack.in img{transform:scale(1)}
+.stack .tagc{position:absolute;left:-14px;bottom:8%;z-index:2;background:var(--cu);color:var(--ink);border-radius:16px;padding:18px 22px;font-weight:700;line-height:1.25;animation:bob 5s ease-in-out infinite}
+.stack .tagc b{display:block;font:600 40px/1 Fraunces}
+@keyframes bob{50%{transform:translateY(-10px)}}
+.story h2{font-size:clamp(40px,4.8vw,66px);margin:16px 0 24px}
+.story p{color:#C7C2B8;margin-bottom:18px;font-size:17px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+.checks div{display:flex;gap:12px;align-items:center;font-weight:600;font-size:15px}
+.checks div::before{content:"✓";flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:rgba(214,145,87,.15);color:var(--cu);font-size:13px}
+
+/* transformation */
+.tf{background:var(--bg2);border-block:1px solid var(--line)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.pair figure{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/5}
+.pair img{width:100%;height:100%;object-fit:cover}
+.pair .lab{position:absolute;left:18px;top:18px;padding:7px 14px;border-radius:99px;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;background:rgba(13,18,16,.7);backdrop-filter:blur(8px)}
+.pair .af .lab{background:var(--cu);color:var(--ink)}
+.pair .af{clip-path:inset(0 100% 0 0);transition:clip-path 1.6s cubic-bezier(.7,0,.2,1) .3s}
+.pair.in .af{clip-path:inset(0 0 0 0)}
+.pair .bf img{filter:saturate(.8)}
+.cap{margin-top:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:var(--mute)}
+.cap b{color:var(--tx);font:500 italic 22px Fraunces}
+
+/* horizontal gallery */
+.hs{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;padding:0 max(24px,calc((100vw - 1240px)/2 + 24px)) 10px}
+.hs::-webkit-scrollbar{display:none}
+.hs .row{display:flex;gap:18px;width:max-content}
+.hs figure{scroll-snap-align:start;width:min(380px,76vw);aspect-ratio:3/4;border-radius:18px;overflow:hidden;position:relative;flex:none;background:var(--panel)}
+.hs img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.8,.2,1);pointer-events:none}
+.hs figure:hover img{transform:scale(1.07)}
+.hs figcaption{position:absolute;left:0;right:0;bottom:0;padding:50px 20px 18px;background:linear-gradient(transparent,rgba(13,18,16,.9));font:500 italic 19px Fraunces;transform:translateY(12px);opacity:.85;transition:.4s}
+.hs figure:hover figcaption{transform:none;opacity:1}
+.hsnav{display:flex;gap:10px}
+.hsnav button{width:52px;height:52px;border-radius:50%;border:1px solid var(--line);background:var(--panel);color:var(--tx);font-size:20px;cursor:pointer;transition:.3s}
+.hsnav button:hover{background:var(--cu);color:var(--ink);border-color:var(--cu)}
+.prog{height:2px;background:var(--line);margin:28px auto 0;max-width:1192px;position:relative;overflow:hidden;border-radius:2px}
+.prog i{position:absolute;inset:0;background:var(--cu);transform-origin:left;transform:scaleX(.1)}
+
+/* interiors grid */
+.ig{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px}
+.ig figure{border-radius:16px;overflow:hidden;cursor:zoom-in;position:relative}
+.ig figure:nth-child(1){grid-column:span 2;grid-row:span 2}
+.ig figure:nth-child(4){grid-row:span 2}
+.ig figure:nth-child(6){grid-column:span 2}
+.ig img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.ig figure:hover img{transform:scale(1.06)}
+
+/* services */
+.sv{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sc{padding:36px 32px;border-radius:20px;border:1px solid var(--line);background:var(--panel);transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .4s;transform-style:preserve-3d;position:relative;overflow:hidden}
+.sc::after{content:"";position:absolute;inset:auto -30% -60% auto;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(214,145,87,.22),transparent 70%);opacity:0;transition:opacity .5s}
+.sc:hover{border-color:rgba(214,145,87,.45)}
+.sc:hover::after{opacity:1}
+.sc .n{font:400 italic 18px Fraunces;color:var(--cu)}
+.sc h3{font:500 30px/1.1 Fraunces;margin:22px 0 12px;letter-spacing:-.01em}
+.sc p{color:var(--mute);font-size:15px}
+
+/* team */
+.team{display:grid;grid-template-columns:1.2fr 1fr;gap:70px;align-items:center}
+.team .ph{border-radius:22px;overflow:hidden;position:relative}
+.team .ph img{width:100%;aspect-ratio:1.38;object-fit:cover}
+.team h2{font-size:clamp(40px,4.6vw,64px);margin:16px 0 22px}
+.team p{color:#C7C2B8;font-size:17px;margin-bottom:16px}
+.creds{display:flex;gap:14px;margin-top:28px}
+.creds img{width:110px;height:140px;object-fit:cover;border-radius:12px;border:1px solid var(--line);transition:transform .4s}
+.creds img:hover{transform:translateY(-6px) rotate(-2deg)}
+
+/* reviews */
+.rv-wrap{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.qt{padding:42px 40px;border-radius:22px;background:var(--panel);border:1px solid var(--line);position:relative}
+.qt .mk{font:400 120px/.5 Fraunces;color:var(--cu);display:block;height:46px}
+.qt p{font:400 clamp(22px,2.2vw,28px)/1.4 Fraunces;letter-spacing:-.01em}
+.qt footer{margin-top:22px;display:flex;align-items:center;gap:12px;color:var(--mute);font-size:14px}
+.qt footer .g{width:28px;height:28px;border-radius:50%;background:#fff;color:#4285F4;display:grid;place-items:center;font:700 14px Manrope}
+.stars{color:var(--cu);letter-spacing:3px}
+.rv-side{display:flex;flex-direction:column;justify-content:space-between;gap:18px}
+.rbox{padding:30px 32px;border-radius:22px;border:1px solid var(--line);display:flex;align-items:center;gap:20px}
+.rbox .k{font:400 58px/1 Fraunces}
+.rbox small{color:var(--mute);display:block}
+
+/* contact */
+.ct{border-radius:28px;overflow:hidden;display:grid;grid-template-columns:1fr 1.05fr;background:var(--panel);border:1px solid var(--line)}
+.ct .l{position:relative;padding:60px 54px;isolation:isolate;display:flex;flex-direction:column;justify-content:space-between;gap:40px}
+.ct .l::before{content:"";position:absolute;inset:0;z-index:-2;background:url(img/x07.jpg) center/cover}
+.ct .l::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(160deg,rgba(13,18,16,.92),rgba(13,18,16,.72))}
+.ct h2{font-size:clamp(40px,4.6vw,64px);margin:16px 0 18px}
+.ct .l p{color:#D3CDC1}
+.cl{display:grid;gap:14px}
+.cl a,.cl div{display:flex;gap:14px;align-items:center}
+.cl .i{width:44px;height:44px;border-radius:50%;border:1px solid rgba(214,145,87,.5);display:grid;place-items:center;color:var(--cu);flex:none}
+.cl .i svg{width:18px}
+.cl small{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.cl b{font-size:17px}
+form{padding:54px;display:grid;grid-template-columns:1fr 1fr;gap:16px;align-content:start}
+form .full{grid-column:1/-1}
+label{display:grid;gap:8px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+input,select,textarea{font:15px Manrope;color:var(--tx);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:15px 16px;width:100%;transition:border-color .3s,box-shadow .3s}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--cu);box-shadow:0 0 0 4px rgba(214,145,87,.14)}
+textarea{min-height:120px;resize:vertical}
+form .btn{justify-content:center}
+.ok{grid-column:1/-1;text-align:center;padding:60px 0}
+.ok .c{width:74px;height:74px;border-radius:50%;background:var(--cu);color:var(--ink);display:grid;place-items:center;margin:0 auto 18px;font-size:34px;animation:pop .6s cubic-bezier(.3,1.6,.5,1)}
+@keyframes pop{from{transform:scale(0)}}
+.ok h3{font:500 36px Fraunces}
+.ok p{color:var(--mute)}
+
+footer.site{padding:44px 0 120px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+footer.site .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.mbar{display:none}
+.lbx{position:fixed;inset:0;z-index:90;background:rgba(6,9,8,.95);display:grid;place-items:center;opacity:0;visibility:hidden;transition:.4s;padding:20px}
+.lbx.on{opacity:1;visibility:visible}
+.lbx img{max-width:94vw;max-height:88vh;border-radius:12px;transform:scale(.95);transition:transform .5s}
+.lbx.on img{transform:none}
+
+@media (max-width:980px){
+  .menu{display:none}.nav{height:70px}.nav .btn{padding:10px 16px;font-size:14px}
+  .logo small{display:none}
+  .hm{display:none}
+  .hero .wrap{padding-bottom:70px}
+  .cue{display:none}
+  section{padding:88px 0}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .stat{padding:26px 20px}
+  .story,.team,.ct,.rv-wrap{grid-template-columns:1fr;gap:44px}
+  .stack{max-width:520px}
+  .checks{grid-template-columns:1fr}
+  .pair{gap:10px}
+  .ig{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
+  .ig figure:nth-child(6){grid-column:span 1}
+  .sv{grid-template-columns:1fr}
+  .ct .l{padding:40px 26px}
+  form{padding:30px 22px;grid-template-columns:1fr}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;inset:auto 0 0;z-index:45;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(13,18,16,.88);backdrop-filter:blur(16px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .45s}
+  .mbar.show{transform:none}
+  .mbar .btn{justify-content:center;padding:14px}
+  #glow{display:none}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.r,.f{opacity:1;transform:none}.hero h1 .l>span,.split .w>span{transform:none}.pair .af{clip-path:none}#ld{display:none}}
+</style>
+</head>
+<body>
+<div id="ld"><div class="w"><span>Gonzalez <b>Painting</b></span></div></div>
+<div id="glow"></div>
+
+<header id="hd">
+  <div class="wrap nav">
+    <a href="#top" class="logo"><span class="m">G</span><span><b>Gonzalez Painting</b><small>Spanaway, WA · Family-owned</small></span></a>
+    <nav class="menu"><a href="#story">Our Story</a><a href="#work">Work</a><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+    <a class="btn btn-c" href="tel:+12533766414">Call <span class="hm">253-376-6414</span></a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="bg"><img id="hbg" src="img/hero.jpg" alt="Home exterior painted by Gonzalez Painting"></div>
+  <div class="wrap">
+    <span class="eyebrow f f1">Family-owned · Pierce County painters</span>
+    <h1 class="serif"><span class="l"><span>Two decades of</span></span><span class="l"><span><em>beautiful</em> finishes.</span></span></h1>
+    <div class="hero-row">
+      <div>
+        <p class="f f2">Diana and Juan Gonzalez and their crew have painted homes, churches and businesses across the South Sound for over 20 years. Licensed, bonded, insured, and BBB A+.</p>
+        <div class="cta f f3">
+          <a class="btn btn-c" href="#contact">Get a free estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-o" href="#work">See our work</a>
+        </div>
+      </div>
+      <div class="badges f f3">
+        <div class="bdg"><span class="k">A+</span><span><b>BBB Accredited</b><small>Since 2003</small></span></div>
+        <div class="bdg"><span class="k">20+</span><span><b>Years in business</b><small>Family-owned</small></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="cue">SCROLL</div>
+</section>
+
+<div class="tick"><div class="t" id="tk"></div></div>
+
+<section style="padding-bottom:0">
+  <div class="wrap">
+    <div class="stats r">
+      <div class="stat"><div class="n"><span data-c="20">0</span><i>+</i></div><p>Years painting the South Sound</p></div>
+      <div class="stat"><div class="n">A<i>+</i></div><p>BBB rating, accredited since 2003</p></div>
+      <div class="stat"><div class="n"><span data-c="4.5" data-d="1">0</span><i>★</i></div><p>Google rating from 26 reviews</p></div>
+      <div class="stat"><div class="n">WA<i>.</i></div><p>State-certified for lead-based paint</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="story">
+  <div class="wrap story">
+    <div class="stack r" id="stk">
+      <figure class="a"><img src="img/x13.jpg" alt="Craftsman home painted by Gonzalez Painting"></figure>
+      <figure class="b"><img src="img/i05.jpg" alt="Interior stairway painted by Gonzalez Painting"></figure>
+      <div class="tagc"><b>20+</b>Years serving<br>Pierce County</div>
+    </div>
+    <div class="r">
+      <span class="eyebrow">Our story</span>
+      <h2 class="serif">A family business that <em>treats your home like ours.</em></h2>
+      <p>Gonzalez Painting is a husband-and-wife company based in Spanaway. We do interior and exterior work for homeowners, churches and businesses.</p>
+      <p>We believe the more prep work we do, the better the job comes out. Our main goals are simple: safety and your satisfaction.</p>
+      <div class="checks">
+        <div>Licensed, bonded &amp; insured</div><div>BBB Accredited, A+ rating</div>
+        <div>Lead-based paint certified</div><div>Residential &amp; commercial</div>
+        <div>Free written estimates</div><div>Credit cards accepted</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tf" id="work">
+  <div class="wrap">
+    <div class="hd r">
+      <div><span class="eyebrow">Featured transformation</span><h2 class="serif split" data-split>From peeling to <em>picture-perfect.</em></h2></div>
+      <p>A church in rough shape, with paint peeling down to bare wood, scraped, prepped and restored to a clean white with crisp blue trim.</p>
+    </div>
+    <div class="pair r" id="pair">
+      <figure class="bf"><img src="img/ch_before.jpg" alt="Church before painting, peeling paint"><span class="lab">Before</span></figure>
+      <figure class="af"><img src="img/ch_after.jpg" alt="Church after painting by Gonzalez Painting"><span class="lab">After</span></figure>
+    </div>
+    <div class="cap r"><b>Church exterior restoration</b><span>Scrape · prep · prime · paint · trim detail</span></div>
+  </div>
+</section>
+
+<section style="padding-bottom:90px">
+  <div class="wrap">
+    <div class="hd r">
+      <div><span class="eyebrow">Exteriors</span><h2 class="serif split" data-split>Homes we're <em>proud of.</em></h2></div>
+      <div class="hsnav"><button id="pv" aria-label="Previous">←</button><button id="nx" aria-label="Next">→</button></div>
+    </div>
+  </div>
+  <div class="hs" id="hs"><div class="row" id="hrow"></div></div>
+  <div class="wrap"><div class="prog"><i id="pg"></i></div></div>
+</section>
+
+<section style="padding-top:40px">
+  <div class="wrap">
+    <div class="hd r">
+      <div><span class="eyebrow">Interiors</span><h2 class="serif split" data-split>Clean lines, <em>inside and out.</em></h2></div>
+      <p>Stairwells, trim, kitchens, built-ins and big open rooms, finished with care. Tap a photo to view it larger.</p>
+    </div>
+    <div class="ig" id="ig"></div>
+  </div>
+</section>
+
+<section id="services" style="background:var(--bg2);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <div class="hd r">
+      <div><span class="eyebrow">Services</span><h2 class="serif split" data-split>Everything it takes to <em>do it right.</em></h2></div>
+      <p>From a single room to a full commercial building, we handle the prep, the paint and the cleanup.</p>
+    </div>
+    <div class="sv">
+      <div class="sc r"><span class="n">01</span><h3>Exterior painting</h3><p>Siding, trim, decks and doors. Scraping, caulking and priming so the finish lasts through Northwest weather.</p></div>
+      <div class="sc r"><span class="n">02</span><h3>Interior painting</h3><p>Walls, ceilings, stairwells, trim and built-ins, with clean lines and a spotless job site.</p></div>
+      <div class="sc r"><span class="n">03</span><h3>Commercial &amp; churches</h3><p>Businesses, churches and multi-unit buildings, scheduled around your hours.</p></div>
+      <div class="sc r"><span class="n">04</span><h3>Lead-safe work</h3><p>Certified for lead-based paint in older homes, so your family and crew stay safe.</p></div>
+      <div class="sc r"><span class="n">05</span><h3>Pressure washing</h3><p>Proper surface prep that helps new paint bond and keeps your home looking fresh.</p></div>
+      <div class="sc r"><span class="n">06</span><h3>Wallpaper removal</h3><p>Old wallpaper stripped and walls prepped for a smooth, modern painted finish.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap team">
+    <div class="ph r"><img src="img/team.jpg" alt="The Gonzalez Painting crew"></div>
+    <div class="r">
+      <span class="eyebrow">The crew</span>
+      <h2 class="serif">Real people. <em>Real pride in the work.</em></h2>
+      <p>When you hire Gonzalez Painting, you're working directly with the owners, Diana and Juan, and the crew they lead on every job.</p>
+      <p>We've been recognized locally as a premier service company and have held BBB accreditation for more than two decades.</p>
+      <div class="creds"><img src="img/bbb.jpg" alt="BBB Accredited Business certificate"><img src="img/award.jpg" alt="Premier Service Company award"><img src="img/crew.jpg" alt="Gonzalez Painting crew on a job"></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" style="padding-top:0">
+  <div class="wrap">
+    <div class="hd r"><div><span class="eyebrow">Reviews</span><h2 class="serif split" data-split>What our <em>neighbors say.</em></h2></div></div>
+    <div class="rv-wrap">
+      <div class="qt r"><span class="mk">“</span><p>Gonzalez painting is the best! Fair price, quick work, very well done! I needed touch ups on peeling paint and thanks to Gonzalez painting this old house is protected from the elements again.</p><footer><span class="g">G</span><span><span class="stars">★★★★★</span><br>Lynda B. · Google review</span></footer></div>
+      <div class="rv-side">
+        <div class="qt r"><span class="mk">“</span><p>Very good company, nice work.</p><footer><span class="g">G</span><span>Paula H. · Google review</span></footer></div>
+        <div class="rbox r"><span class="k">4.5</span><span><span class="stars">★★★★★</span><small>Average from 26 Google reviews</small></span></div>
+        <div class="rbox r"><span class="k" style="color:var(--cu)">A+</span><span><b>Better Business Bureau</b><small>Accredited business since 2003</small></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="ct r">
+      <div class="l">
+        <div>
+          <span class="eyebrow">Free estimate</span>
+          <h2 class="serif">Let's talk about <em>your project.</em></h2>
+          <p>Call or text Juan and Diana directly, or send a few details and we'll get back to you quickly.</p>
+        </div>
+        <div class="cl">
+          <a href="tel:+12533766414"><span class="i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span><small>Call or text</small><b>253-376-6414</b></span></a>
+          <a href="mailto:gonzalezpainting24@comcast.net"><span class="i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span><span><small>Email</small><b>gonzalezpainting24@comcast.net</b></span></a>
+          <div><span class="i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span><small>Based in</small><b>Spanaway · serving all of Pierce County</b></span></div>
+        </div>
+      </div>
+      <form id="f">
+        <label>Name<input required name="name" autocomplete="name"></label>
+        <label>Phone<input required name="phone" type="tel" autocomplete="tel"></label>
+        <label class="full">Email<input name="email" type="email" autocomplete="email"></label>
+        <label class="full">Project address<input name="address" autocomplete="street-address"></label>
+        <label class="full">Type of project<select name="type"><option>Exterior</option><option>Interior</option><option>Interior &amp; exterior</option><option>Commercial / church</option><option>Other</option></select></label>
+        <label class="full">Project details<textarea name="msg" placeholder="Size of home, rooms, timeline…"></textarea></label>
+        <button class="btn btn-c full" type="submit">Request my free estimate</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site"><div class="wrap"><div>© Gonzalez Painting · Spanaway, WA · Licensed, bonded &amp; insured · BBB A+</div><div><a href="tel:+12533766414">253-376-6414</a></div></div></footer>
+<div class="mbar" id="mb"><a class="btn btn-c" href="tel:+12533766414">Call now</a><a class="btn btn-o" href="sms:+12533766414">Text us</a></div>
+<div class="lbx" id="lbx"><img alt=""></div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const go=()=>{$('#ld').classList.add('out');document.body.classList.add('on')};
+document.addEventListener('DOMContentLoaded',()=>setTimeout(go,650));setTimeout(go,1800);
+// header, mobile bar, hero parallax
+const hd=$('#hd'),mb=$('#mb'),hb=$('#hbg');
+addEventListener('scroll',()=>{const y=scrollY;hd.classList.toggle('s',y>40);mb.classList.toggle('show',y>innerHeight*.6);if(y<innerHeight)hb.style.translate=`0 ${y*.25}px`},{passive:true});
+// cursor glow
+const gl=$('#glow');addEventListener('pointermove',e=>{gl.style.opacity=1;gl.style.left=e.clientX+'px';gl.style.top=e.clientY+'px'});
+// ticker
+const T=['Spanaway','Tacoma','Puyallup','Lakewood','Graham','Parkland','University Place','Gig Harbor','Federal Way'];
+$('#tk').innerHTML=[...T,...T].map(t=>`<span>${t}</span>`).join('');
+// split headings into words
+$$('[data-split]').forEach(h=>{const wrap=n=>{if(n.nodeType===3){const f=document.createDocumentFragment();n.textContent.split(/(\s+)/).forEach(w=>{if(!w.trim()){f.appendChild(document.createTextNode(w));return}const o=document.createElement('span');o.className='w';o.innerHTML=`<span>${w}</span>`;f.appendChild(o)});n.replaceWith(f)}else[...n.childNodes].forEach(wrap)};[...h.childNodes].forEach(wrap);h.querySelectorAll('.w>span').forEach((s,i)=>s.style.transitionDelay=i*.06+'s')});
+// reveal + counters
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const t=e.target;t.classList.add('in');io.unobserve(t);
+ t.querySelectorAll('[data-c]').forEach(n=>{const end=+n.dataset.c,d=+(n.dataset.d||0),t0=performance.now();(function f(now){const p=Math.min((now-t0)/1800,1);n.textContent=(end*(1-Math.pow(1-p,3))).toFixed(d);if(p<1)requestAnimationFrame(f)})(t0)})}),{threshold:.16});
+$$('.r,[data-split],.stack').forEach(el=>io.observe(el));
+$$('.sv .r,.rv-side .r').forEach((el,i)=>el.style.transitionDelay=(i%3)*.1+'s');
+// horizontal gallery
+const H=[['x01','Blue-gray craftsman'],['x03','Two-story repaint'],['x07','Restored church'],['x08','Classic green clapboard'],['x13','Modern farmhouse'],['x05','Porch & trim detail'],['x09','Warm craftsman'],['x14','Brick-red three-story'],['x11','Cottage with orange door'],['x15','Waterfront exterior'],['x12','Victorian refresh'],['c01','Commercial building']];
+$('#hrow').innerHTML=H.map(([s,c])=>`<figure><img loading="lazy" src="img/${s}.jpg" alt="${c} by Gonzalez Painting"><figcaption>${c}</figcaption></figure>`).join('');
+const hs=$('#hs'),pg=$('#pg');
+const upd=()=>{const m=hs.scrollWidth-hs.clientWidth;pg.style.transform=`scaleX(${Math.max(.08,m?hs.scrollLeft/m:1)})`};hs.addEventListener('scroll',upd,{passive:true});upd();
+$('#nx').onclick=()=>hs.scrollBy({left:400,behavior:'smooth'});$('#pv').onclick=()=>hs.scrollBy({left:-400,behavior:'smooth'});
+let dx=null,sl=0;hs.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse')return;dx=e.clientX;sl=hs.scrollLeft;hs.style.scrollSnapType='none'});addEventListener('pointerup',()=>{dx=null;hs.style.scrollSnapType=''});addEventListener('pointermove',e=>{if(dx!==null)hs.scrollLeft=sl-(e.clientX-dx)});
+// interiors grid
+const I=['i03','i02','i01','i10','i05','i09','i07'];
+$('#ig').innerHTML=I.map(s=>`<figure class="r"><img loading="lazy" src="img/${s}.jpg" alt="Interior painting by Gonzalez Painting"></figure>`).join('');
+$$('#ig .r').forEach((el,i)=>{el.style.transitionDelay=(i%4)*.08+'s';io.observe(el)});
+const lb=$('#lbx');$('#ig').onclick=e=>{const f=e.target.closest('figure');if(f){lb.querySelector('img').src=f.querySelector('img').src;lb.classList.add('on')}};lb.onclick=()=>lb.classList.remove('on');
+// service card tilt
+$$('.sc').forEach(c=>{c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(800px) rotateX(${-y*6}deg) rotateY(${x*6}deg) translateY(-4px)`});c.addEventListener('pointerleave',()=>c.style.transform='')});
+// form
+$('#f').onsubmit=e=>{e.preventDefault();e.target.innerHTML='<div class="ok"><div class="c">✓</div><h3>Thank you!</h3><p>We received your request and will be in touch soon. Need us sooner? Call 253-376-6414.</p></div>'};
+</script>
+</body>
+</html>
